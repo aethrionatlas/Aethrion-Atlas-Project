@@ -5,6 +5,42 @@ function svgNode(tag, attrs = {}, text) {
   if (text !== undefined) node.textContent = text;
   return node;
 }
+// Wrap complete names rather than abbreviating campaign data. SVG text scales
+// with the map and keeps its outlined contrast at every zoom level.
+function areaLabel(name, item) {
+  const label = svgNode('text', { 'text-anchor': 'middle' });
+  const measure = document.createElement('canvas').getContext('2d');
+  let fontSize = 20, lines;
+  function wrap() {
+    measure.font = `${fontSize}px Georgia`;
+    const result = [];
+    let line = '';
+    for (const word of name.split(/\s+/)) {
+      if (line && measure.measureText(`${line} ${word}`).width <= item.width - 16) {
+        line += ` ${word}`;
+        continue;
+      }
+      if (line) result.push(line);
+      line = '';
+      for (const character of word) {
+        if (line && measure.measureText(line + character).width > item.width - 16) {
+          result.push(line); line = '';
+        }
+        line += character;
+      }
+    }
+    if (line) result.push(line);
+    return result;
+  }
+  do { lines = wrap(); if (lines.length * fontSize * 1.2 <= item.height - 16 || fontSize <= 12) break; fontSize--; } while (true);
+  label.style.fontSize = `${fontSize}px`;
+  const lineHeight = fontSize * 1.2;
+  const firstY = item.y + item.height / 2 - (lines.length - 1) * lineHeight / 2 + fontSize * 0.35;
+  lines.forEach((line, index) => {
+    label.append(svgNode('tspan', { x: item.x + item.width / 2, y: firstY + index * lineHeight }, line));
+  });
+  return label;
+}
 export function renderMap(svg, atlas, map, selected, onSelect) {
   svg.setAttribute('viewBox', `0 0 ${map.width} ${map.height}`);
   // Interactive descendants remain accessible rather than hidden inside an image role.
@@ -27,8 +63,7 @@ export function renderMap(svg, atlas, map, selected, onSelect) {
     const group = svgNode('g', { class: `map-place pin${selected?.id === place.id ? ' selected' : ''}`, tabindex: 0, role: 'button', 'aria-label': `Mostra scheda: ${place.name}`, 'data-place-id': place.id });
     if (item.width) {
       group.append(svgNode('rect', { class: 'region', x: item.x, y: item.y, width: item.width, height: item.height, rx: 22 }));
-      group.append(svgNode('text', { x: item.x + item.width / 2, y: item.y + 60, 'text-anchor': 'middle' }, 'Regno demo'));
-      group.append(svgNode('text', { x: item.x + item.width / 2, y: item.y + 95, 'text-anchor': 'middle' }, place.name.slice(-2)));
+      group.append(areaLabel(place.name, item));
     } else {
       group.append(svgNode('circle', { cx: item.x, cy: item.y, r: 18 }));
       group.append(svgNode('text', { x: item.x, y: item.y - 35, 'text-anchor': 'middle' }, place.name));

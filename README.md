@@ -33,7 +33,9 @@ Seleziona un luogo per aprirne la scheda; usa il collegamento nella scheda per
 entrare nella mappa di dettaglio. I breadcrumb permettono di risalire ai livelli
 superiori. Sulla mappa focalizzata: frecce per spostarsi, `+` e `−` per lo zoom,
 `0` per centrare. I luoghi sono raggiungibili con Tab e attivabili con Invio o
-Spazio. Su smartphone trascina con un dito e ingrandisci con due; lo scorrimento
+Spazio. Un clic breve seleziona; un trascinamento superiore a 5 pixel dalla
+posizione iniziale sposta la mappa anche sopra le aree cliccabili, senza selezionare.
+Su smartphone trascina con un dito e ingrandisci con due; lo scorrimento
 della pagina resta disponibile fuori dalla mappa.
 
 ## Struttura
@@ -107,6 +109,9 @@ Il test usa `/usr/bin/chromium`, modificabile tramite `CHROMIUM_PATH`. Avvia e
 chiude un proprio server temporaneo; prova il sito sotto una sottocartella.
 Controlla le 31 mappe, selezione, schede, ricerca, breadcrumb, ricaricamento,
 cronologia, tastiera, zoom e trascinamento, layout smartphone, touch e pinch.
+Include regressioni per trascinamenti lenti sopra regni e città, clic con piccoli
+movimenti, annullamento e perdita della cattura (prima e durante il drag), assenza
+di selezioni involontarie, zoom ancorato e nomi completi su più righe.
 Verifica inoltre il recupero da URL inesistenti e l'errore visibile per dati non
 caricabili, intercettando errori JavaScript e risorse HTTP mancanti nel flusso normale.
 

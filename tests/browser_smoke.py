@@ -8,6 +8,7 @@ from pathlib import Path
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from playwright.sync_api import sync_playwright
+from browser_gestures import run_gesture_tests
 
 ROOT = Path(__file__).resolve().parents[1]
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -114,6 +115,7 @@ try:
         bad.goto(base)
         bad.wait_for_function('document.querySelector("#map-title").textContent === "Atlante non disponibile"')
         assert '404' in bad.locator('#status').inner_text()
+        run_gesture_tests(browser, base, data)
         browser.close()
         print('PASS: 31 maps; kingdom/city selection, breadcrumbs, deep links, history, search, desktop zoom/drag/keyboard, mobile layout/pinch/drag/navigation, invalid route and data failure; no JavaScript errors or failed assets.')
 finally:
