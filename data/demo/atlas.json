@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-campaign",
+  "name": "Campagna dimostrativa",
+  "rootMapId": "demo-map-continent",
+  "kingdomSlots": 15,
+  "places": [
+    {
+      "id": "demo-continent",
+      "name": "Continente dimostrativo",
+      "type": "continent",
+      "parentId": null,
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-continent",
+      "description": "Atlante di prova per verificare il motore. Le posizioni non rappresentano la geografia di Aethrion."
+    },
+    {
+      "id": "demo-kingdom-01",
+      "name": "Regno dimostrativo 01",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-01",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-01",
+      "name": "Città dimostrativa 01",
+      "type": "city",
+      "parentId": "demo-kingdom-01",
+      "mapId": "demo-map-kingdom-01",
+      "detailMapId": "demo-map-city-01",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-02",
+      "name": "Regno dimostrativo 02",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-02",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-02",
+      "name": "Città dimostrativa 02",
+      "type": "city",
+      "parentId": "demo-kingdom-02",
+      "mapId": "demo-map-kingdom-02",
+      "detailMapId": "demo-map-city-02",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-03",
+      "name": "Regno dimostrativo 03",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-03",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-03",
+      "name": "Città dimostrativa 03",
+      "type": "city",
+      "parentId": "demo-kingdom-03",
+      "mapId": "demo-map-kingdom-03",
+      "detailMapId": "demo-map-city-03",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-04",
+      "name": "Regno dimostrativo 04",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-04",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-04",
+      "name": "Città dimostrativa 04",
+      "type": "city",
+      "parentId": "demo-kingdom-04",
+      "mapId": "demo-map-kingdom-04",
+      "detailMapId": "demo-map-city-04",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-05",
+      "name": "Regno dimostrativo 05",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-05",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-05",
+      "name": "Città dimostrativa 05",
+      "type": "city",
+      "parentId": "demo-kingdom-05",
+      "mapId": "demo-map-kingdom-05",
+      "detailMapId": "demo-map-city-05",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-06",
+      "name": "Regno dimostrativo 06",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-06",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-06",
+      "name": "Città dimostrativa 06",
+      "type": "city",
+      "parentId": "demo-kingdom-06",
+      "mapId": "demo-map-kingdom-06",
+      "detailMapId": "demo-map-city-06",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-07",
+      "name": "Regno dimostrativo 07",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-07",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-07",
+      "name": "Città dimostrativa 07",
+      "type": "city",
+      "parentId": "demo-kingdom-07",
+      "mapId": "demo-map-kingdom-07",
+      "detailMapId": "demo-map-city-07",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-08",
+      "name": "Regno dimostrativo 08",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-08",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-08",
+      "name": "Città dimostrativa 08",
+      "type": "city",
+      "parentId": "demo-kingdom-08",
+      "mapId": "demo-map-kingdom-08",
+      "detailMapId": "demo-map-city-08",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-09",
+      "name": "Regno dimostrativo 09",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-09",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-09",
+      "name": "Città dimostrativa 09",
+      "type": "city",
+      "parentId": "demo-kingdom-09",
+      "mapId": "demo-map-kingdom-09",
+      "detailMapId": "demo-map-city-09",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-10",
+      "name": "Regno dimostrativo 10",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-10",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-10",
+      "name": "Città dimostrativa 10",
+      "type": "city",
+      "parentId": "demo-kingdom-10",
+      "mapId": "demo-map-kingdom-10",
+      "detailMapId": "demo-map-city-10",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-11",
+      "name": "Regno dimostrativo 11",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-11",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-11",
+      "name": "Città dimostrativa 11",
+      "type": "city",
+      "parentId": "demo-kingdom-11",
+      "mapId": "demo-map-kingdom-11",
+      "detailMapId": "demo-map-city-11",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-12",
+      "name": "Regno dimostrativo 12",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-12",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-12",
+      "name": "Città dimostrativa 12",
+      "type": "city",
+      "parentId": "demo-kingdom-12",
+      "mapId": "demo-map-kingdom-12",
+      "detailMapId": "demo-map-city-12",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-13",
+      "name": "Regno dimostrativo 13",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-13",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-13",
+      "name": "Città dimostrativa 13",
+      "type": "city",
+      "parentId": "demo-kingdom-13",
+      "mapId": "demo-map-kingdom-13",
+      "detailMapId": "demo-map-city-13",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-14",
+      "name": "Regno dimostrativo 14",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-14",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-14",
+      "name": "Città dimostrativa 14",
+      "type": "city",
+      "parentId": "demo-kingdom-14",
+      "mapId": "demo-map-kingdom-14",
+      "detailMapId": "demo-map-city-14",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    },
+    {
+      "id": "demo-kingdom-15",
+      "name": "Regno dimostrativo 15",
+      "type": "kingdom",
+      "parentId": "demo-continent",
+      "mapId": "demo-map-continent",
+      "detailMapId": "demo-map-kingdom-15",
+      "description": "Spazio riservato a un futuro regno. Nome, confini, posizione e storia canonici non sono ancora definiti."
+    },
+    {
+      "id": "demo-city-15",
+      "name": "Città dimostrativa 15",
+      "type": "city",
+      "parentId": "demo-kingdom-15",
+      "mapId": "demo-map-kingdom-15",
+      "detailMapId": "demo-map-city-15",
+      "description": "Insediamento di prova. La pianta è uno schema tecnico, senza edifici o dati canonici."
+    }
+  ],
+  "maps": [
+    {
+      "id": "demo-map-continent",
+      "name": "Continente dimostrativo",
+      "level": "continent",
+      "ownerId": "demo-continent",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-kingdom-01",
+          "x": 70,
+          "y": 90,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-02",
+          "x": 250,
+          "y": 90,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-03",
+          "x": 430,
+          "y": 90,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-04",
+          "x": 610,
+          "y": 90,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-05",
+          "x": 790,
+          "y": 90,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-06",
+          "x": 70,
+          "y": 270,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-07",
+          "x": 250,
+          "y": 270,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-08",
+          "x": 430,
+          "y": 270,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-09",
+          "x": 610,
+          "y": 270,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-10",
+          "x": 790,
+          "y": 270,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-11",
+          "x": 70,
+          "y": 450,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-12",
+          "x": 250,
+          "y": 450,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-13",
+          "x": 430,
+          "y": 450,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-14",
+          "x": 610,
+          "y": 450,
+          "width": 150,
+          "height": 140
+        },
+        {
+          "placeId": "demo-kingdom-15",
+          "x": 790,
+          "y": 450,
+          "width": 150,
+          "height": 140
+        }
+      ]
+    },
+    {
+      "id": "demo-map-kingdom-01",
+      "name": "Regno dimostrativo 01",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-01",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-01",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-01",
+      "name": "Città dimostrativa 01",
+      "level": "city",
+      "ownerId": "demo-city-01",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-02",
+      "name": "Regno dimostrativo 02",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-02",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-02",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-02",
+      "name": "Città dimostrativa 02",
+      "level": "city",
+      "ownerId": "demo-city-02",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-03",
+      "name": "Regno dimostrativo 03",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-03",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-03",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-03",
+      "name": "Città dimostrativa 03",
+      "level": "city",
+      "ownerId": "demo-city-03",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-04",
+      "name": "Regno dimostrativo 04",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-04",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-04",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-04",
+      "name": "Città dimostrativa 04",
+      "level": "city",
+      "ownerId": "demo-city-04",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-05",
+      "name": "Regno dimostrativo 05",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-05",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-05",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-05",
+      "name": "Città dimostrativa 05",
+      "level": "city",
+      "ownerId": "demo-city-05",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-06",
+      "name": "Regno dimostrativo 06",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-06",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-06",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-06",
+      "name": "Città dimostrativa 06",
+      "level": "city",
+      "ownerId": "demo-city-06",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-07",
+      "name": "Regno dimostrativo 07",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-07",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-07",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-07",
+      "name": "Città dimostrativa 07",
+      "level": "city",
+      "ownerId": "demo-city-07",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-08",
+      "name": "Regno dimostrativo 08",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-08",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-08",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-08",
+      "name": "Città dimostrativa 08",
+      "level": "city",
+      "ownerId": "demo-city-08",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-09",
+      "name": "Regno dimostrativo 09",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-09",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-09",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-09",
+      "name": "Città dimostrativa 09",
+      "level": "city",
+      "ownerId": "demo-city-09",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-10",
+      "name": "Regno dimostrativo 10",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-10",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-10",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-10",
+      "name": "Città dimostrativa 10",
+      "level": "city",
+      "ownerId": "demo-city-10",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-11",
+      "name": "Regno dimostrativo 11",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-11",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-11",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-11",
+      "name": "Città dimostrativa 11",
+      "level": "city",
+      "ownerId": "demo-city-11",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-12",
+      "name": "Regno dimostrativo 12",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-12",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-12",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-12",
+      "name": "Città dimostrativa 12",
+      "level": "city",
+      "ownerId": "demo-city-12",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-13",
+      "name": "Regno dimostrativo 13",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-13",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-13",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-13",
+      "name": "Città dimostrativa 13",
+      "level": "city",
+      "ownerId": "demo-city-13",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-14",
+      "name": "Regno dimostrativo 14",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-14",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-14",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-14",
+      "name": "Città dimostrativa 14",
+      "level": "city",
+      "ownerId": "demo-city-14",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    },
+    {
+      "id": "demo-map-kingdom-15",
+      "name": "Regno dimostrativo 15",
+      "level": "kingdom",
+      "ownerId": "demo-kingdom-15",
+      "width": 1000,
+      "height": 700,
+      "placements": [
+        {
+          "placeId": "demo-city-15",
+          "x": 500,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "demo-map-city-15",
+      "name": "Città dimostrativa 15",
+      "level": "city",
+      "ownerId": "demo-city-15",
+      "width": 1000,
+      "height": 700,
+      "placements": []
+    }
+  ]
+}
